@@ -1,12 +1,20 @@
 <script>
-	import BlogPreviewCard from '$lib/components/BlogPreviewCard.svelte';
+	import Header from '$lib/components/Header.svelte';
+	import Banner from '$lib/components/Banner.svelte';
+	import Trending from '$lib/components/Trending.svelte';
+	import BlogListing from '$lib/components/BlogListing.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<!-- tailwind usable -->
-<h1 class="text-3xl font-bold underline">Hello world!</h1>
+<Header />
+<Banner />
+<div class="mt-[175px]">
+	<Trending />
+</div>
+<div class="mt-[175px]">
+	<BlogListing />
+</div>
+<div>
+	<Footer />
+</div>
 
-<!-- custom component, can be found inside lib/components -->
-<BlogPreviewCard title="Why black people celebrate Mordi gars the way we do" />
-
-<!-- please try to separate your code into components and use them in your pages. This will make code
-more readable and maintainable. -->

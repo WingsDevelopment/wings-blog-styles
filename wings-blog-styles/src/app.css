@@ -1,3 +1,87 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .bannerDesc h1  {
+  	@apply text-dark text-[45px] xl:text-[55px] 2xl:text-[65px] font-bold;
+  }
+  .bannerDesc h1 span {
+	@apply text-primary;
+  }
+  .bannerDesc p {
+  	@apply text-dark text-[30px] xl:text-[45px] 2xl:text-[55px] leading-[35px] xl:leading-[45px] 2xl:leading-[55px] font-light;
+  }
+  .btn {
+  	@apply py-4 font-semibold text-dark px-10 rounded-[10px] text-base;  
+  }
+  .btnPrimary {
+  	@apply bg-primary shadow-shadowLg;
+  }
+  .navCol ul li {
+    @apply inline-block;
+  }
+  .navCol ul li button span {
+    @apply px-5 transition-all duration-500 ease-in-out;
+  }
+  .navCol ul li.active button span {
+    @apply bg-primary;
+  }
+  .navCol ul li button:hover span {
+    @apply bg-primary;
+  }
+  .previewList ul li {
+    @apply relative text-[15px] pl-4 before:left-0 before:top-1.5 before:w-2 before:h-2 before:rounded-full before:bg-primary before:absolute text-darkgray font-medium;
+  }
+  .previewList ul li + li {
+    @apply mt-4;
+  }
+  .footerMenu ul li {
+    @apply inline-block;
+  }
+  .footerMenu ul li a {
+    @apply text-sm font-medium text-black;
+  }
+  .footerMenu ul li + li {
+    @apply ml-10;
+  }
+  .blogListing .listingCol + .listingCol {
+    @apply mt-10;
+  }
+  .tagOuter ul li {
+    @apply inline-block;
+  }
+  .tagOuter ul li.active span {
+    @apply bg-primary;
+  }
+  .actionBtn button img {
+    @apply brightness-0 transition-all duration-500 ease-in-out;
+  }
+  .actionBtn button span.btnIcon {
+    @apply w-10 h-10 transition-all duration-500 ease-in-out flex items-center justify-center rounded-[5px] border border-solid border-gray2;
+  }
+  .actionBtn button span {
+    @apply transition-all duration-500 ease-in-out;
+  }
+  .actionBtn button:hover span.btnIcon {
+    @apply border-primary;
+  }
+  .actionBtn button:hover img {
+    @apply brightness-100;
+  }
+  .actionBtn button:hover span {
+    @apply text-primary;
+  }
+  .headerDD button {
+    @apply p-0 focus:shadow-none focus:ring-0 focus:border-0;
+  }
+  .headerDD button + div {
+    @apply rounded-[10px] rounded-tr-none;
+  }
+  .headerDD ul {
+    @apply py-5 border border-solid border-primary px-4 rounded-[10px] rounded-tr-none;
+  }
+  .headerDD ul li + li {
+    @apply mt-3;
+  }
+}
