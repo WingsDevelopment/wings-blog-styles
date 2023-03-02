@@ -17,8 +17,8 @@
 			<Title title="Trending on Medium" />
 			<div class="flex flex-col xl:flex-row mt-24">
 				<div class="flex-1 xl:pr-[40px] 2xl:pr-[60px]">
-					<div class="grid grid-cols-1 md:grid-cols-2 gap-0">
-						<div class="cardStyle1 pt-5 sm:pt-[38px] rounded-[10px] px-5 sm:px-11 pb-[14px]">
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+						<div class="cardStyle1 bg-white border border-solid border-primary pt-5 sm:pt-[38px] rounded-[10px] px-5 sm:px-11 pb-[14px]">
 							<div class="cardInner relative">
 								<span class="block text-[50px] text-primary font-bold"> 01. </span>
 								<div class="flex mb-3 gap-5 items-center">
@@ -62,7 +62,7 @@
 								<span class="text-darkgray text-sm">Feb 26. 5 min read</span>
 							</div>
 						</div>
-						<div class="cardStyle1 pt-5 sm:pt-[38px] rounded-[10px] px-5 sm:px-11 pb-[14px]">
+						<div class="cardStyle1 bg-white border border-solid border-primary pt-5 sm:pt-[38px] rounded-[10px] px-5 sm:px-11 pb-[14px]">
 							<div class="cardInner relative">
 								<span class="block text-[50px] text-primary font-bold"> 03. </span>
 								<div class="flex mb-3 gap-5 items-center">
@@ -81,7 +81,7 @@
 								<span class="text-darkgray text-sm">Feb 14. 15 min read</span>
 							</div>
 						</div>
-						<div class="cardStyle1 pt-5 sm:pt-[38px] rounded-[10px] px-5 sm:px-11 pb-[14px]">
+						<div class="cardStyle1 bg-white border border-solid border-primary pt-5 sm:pt-[38px] rounded-[10px] px-5 sm:px-11 pb-[14px]">
 							<div class="cardInner relative">
 								<span class="block text-[50px] text-primary font-bold"> 04. </span>
 								<div class="flex mb-3 gap-5 items-center">

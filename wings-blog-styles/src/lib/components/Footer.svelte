@@ -1,5 +1,5 @@
 <footer>
-	<div class="container mx-auto 2xl:max-w-[1400px]">
+	<div class="container px-4 mx-auto 2xl:max-w-[1400px]">
 		<div class="footerMenu py-10">
 			<ul class="text-center">
 				<li>

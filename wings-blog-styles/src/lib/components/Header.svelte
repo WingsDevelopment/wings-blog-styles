@@ -14,13 +14,15 @@
 	<div class="flex items-center">
 		<div class="flex-1">
 			<div class="logoCol">
-				<img class="w-16" src={Logo} alt="Logo" />
+				<a href="javascript:void(0)">
+					<img class="w-16" src={Logo} alt="Logo" />
+				</a>
 			</div>
 		</div>
 		<div class="flex-none">
 			<div class="headerDD relative">
-				<Button class="bg-transparent" data-placement="bottom-end">
-					<img src={Toggle} alt="Logo" />
+				<Button class="hover:before:scale-100 rounded before:scale-0 before:inset-0 before:transition-all before:duration-300 before:ease-in-out relative before:absolute before:rounded before:bg-primary w-9 h-9 bg-dark" data-placement="bottom-end">
+					<img src={Toggle} class="relative" alt="Logo" />
 				</Button>
 				<Dropdown {placement} triggeredBy="[data-placement]">
 					<DropdownItem class="flex gap-3 text-sm text-dark">

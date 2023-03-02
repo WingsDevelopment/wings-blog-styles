@@ -7,16 +7,16 @@
   	@apply text-dark text-[45px] xl:text-[55px] 2xl:text-[65px] font-bold;
   }
   .bannerDesc h1 span {
-	@apply text-primary;
+	 @apply text-primary;
   }
   .bannerDesc p {
   	@apply text-dark text-[30px] xl:text-[45px] 2xl:text-[55px] leading-[35px] xl:leading-[45px] 2xl:leading-[55px] font-light;
   }
   .btn {
-  	@apply py-4 font-semibold text-dark px-10 rounded-[10px] text-base;  
+  	@apply py-4 font-semibold transition-all duration-500 ease-in-out text-dark px-10 rounded-[10px] text-base;  
   }
   .btnPrimary {
-  	@apply bg-primary shadow-shadowLg;
+  	@apply hover:bg-primarydark bg-primary shadow-shadowLg;
   }
   .navCol ul li {
     @apply inline-block;
@@ -42,8 +42,8 @@
   .footerMenu ul li a {
     @apply text-sm font-medium text-black;
   }
-  .footerMenu ul li + li {
-    @apply ml-10;
+  .footerMenu ul li {
+    @apply mx-5;
   }
   .blogListing .listingCol + .listingCol {
     @apply mt-10;

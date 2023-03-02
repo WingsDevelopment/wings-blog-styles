@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Title from '$lib/components/Title.svelte';
 	import Nav from '$lib/components/Nav.svelte';
 	import FeatImg from '$lib/images/featimg.jpg';
@@ -9,45 +9,51 @@
 	import CalendarIcon from '$lib/images/calendaricon.svg';
 	import TimerIcon from '$lib/images/timericon.svg';
 	import CrownIcon from '$lib/images/crown.svg';
+	export let authorName: string;
+	export let blogTitle: string;
+	export let contentPreview: string;
+	export let publishDate: string;
+	export let readDuration: string;
+	export let mainTag: string;
 </script>
 
 <div class="listingCol">
 	<div class="cardStyle2 bg-white border border-solid border-gray rounded-xl">
 		<div class="flex flex-col xl:flex-row">
-			<div class="flex-1">
-				<div class="blogMain p-8">
-					<div class="flex flex-col md:flex-row xl:gap-[32px] 2xl:gap-[52px]">
+			<div class="flex-1"> 
+				<div class="blogMain p-5">
+					<div class="flex flex-col xl:flex-row gap-5 2xl:gap-8">
 						<div class="flex-none">
 							<img
-								class="rounded-xl w-full md:w-[262px] h-[214px] object-cover"
+								class="rounded-xl w-full xl:w-[262px] h-[214px] object-cover"
 								src={FeatImg}
 								alt="Feature Image"
 							/>
 						</div>
-						<div class="flex-1 mt-5 md:mt-0 pl-0 md:pl-6 xl:pl-0">
+						<div class="flex-1 mt-5 md:mt-0 pl-0 md:pl-0 xl:pl-0">
 							<div class="flex mb-3 gap-3 items-center">
 								<div class="flex-none">
 									<img class="w-[50px] h-[50px] rounded-full object-cover" src={User5} alt="User" />
 								</div>
 								<div class="flex-1">
-									<h3 class="text-base text-dark">Katherine Becker</h3>
+									<h3 class="text-base text-dark">{authorName}</h3>
 								</div>
 							</div>
 							<h3 class="text-2xl mb-4 font-bold text-black">
-								Why Black People Celebrate Mardi Gras The Way We Do
+								{blogTitle}
 							</h3>
 							<p class="text-darkgray text-base">
-								The hidden history of Mardi Gras, from a Black perspective
+								{contentPreview}
 							</p>
 							<div class="listingBtm mt-6">
-								<div class="flex items-center gap-4">
+								<div class="flex flex-col sm:flex-row items-center gap-4">
 									<div class="flex-none">
 										<div class="flex gap-1.5 items-center">
 											<div class="flex-none">
 												<img src={CalendarIcon} alt="Calendar" />
 											</div>
 											<div class="flex-none">
-												<span class="text-gray3 text-sm">Feb 19</span>
+												<span class="text-gray3 text-sm">{publishDate}</span>
 											</div>
 										</div>
 									</div>
@@ -57,7 +63,7 @@
 												<img src={TimerIcon} alt="Timer" />
 											</div>
 											<div class="flex-none">
-												<span class="text-gray3 text-sm">6 Min read</span>
+												<span class="text-gray3 text-sm">{readDuration}</span>
 											</div>
 										</div>
 									</div>
@@ -65,7 +71,7 @@
 										<button
 											class="py-3 px-7 rounded-full bg-orange/20 font-medium text-dark text-[15px]"
 										>
-											Racism
+											{mainTag}
 										</button>
 									</div>
 									<div class="flex-none">
@@ -78,7 +84,7 @@
 				</div>
 			</div>
 			<div class="flex-none">
-				<div class="sm:flex h-full">
+				<div class="xl:flex h-full">
 					<!-- <div class="flex-1 xl:flex-none h-full">
 						<div class="previewCol py-7 px-5 h-full w-full xl:w-[420px] bg-black/[.02]">
 							<div class="titleCol">
@@ -96,7 +102,7 @@
 					</div> -->
 					<div class="flex-none h-full">
 						<div class="actionBtn h-full px-9 py-4 xl:py-7">
-							<div class="flex gap-3 flex-row sm:flex-col h-full items-center justify-between">
+							<div class="flex gap-3 flex-row xl:flex-col h-full items-center justify-between">
 								<div class="flex-none">
 									<button class="text-center flex flex-col justify-center items-center">
 										<span class="btnIcon">

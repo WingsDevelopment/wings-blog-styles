@@ -3,11 +3,11 @@
 	import BgShapeVector from '$lib/images/bgshape.svg';
 </script>
 
-<div class="flex-none">
-	<div class="w-full mt-10 xl:mt-0 xl:w-[510px] xl:pl-[52px] 2xl:pl-[92px]">
+<div class="flex-none sticky top-3">
+	<div class="w-full mt-10 xl:mt-0">
 		<div class="sidebarCol relative">
 			<div
-				class="sidebarInner relative z-30 bg-white rounded-[10px] border border-solid border-gray pt-[48px] pb-[30px] pr-[22px] pl-[30px]"
+				class="sidebarInner relative z-30 bg-white rounded-[10px] border border-solid border-gray pt-[48px] pb-[30px] pr-4 xl:pr-[22px] pl-5 xl:pl-[30px]"
 			>
 				<div class="sidebarTitle text-center">
 					<h3 class="text-[22px] leading-6 text-dark font-semibold">
@@ -22,9 +22,9 @@
 						<li>
 							<Tag tagText="Data Science" />
 						</li>
-						<li>
+						<li> 
 							<Tag tagText="Technology" />
-						</li>
+						</li> 
 						<li>
 							<Tag tagText="Self Improvement" />
 						</li>
@@ -46,7 +46,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="bgShape absolute -bottom-[55px] -right-[100px] -left-[60px] -top-16 z-20">
+			<div class="bgShape absolute -bottom-[55px] right-[0] 2xl:-right-[30px] left-0 md:-left-[60px] -top-16 z-20">
 				<img src={BgShapeVector} class="h-full" alt="Bg Shape" />
 			</div>
 		</div>
