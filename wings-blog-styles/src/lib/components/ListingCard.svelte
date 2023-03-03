@@ -4,18 +4,21 @@
 	import FeatImg from '$lib/images/featimg.jpg';
 	import User5 from '$lib/images/user5.png';
 	import LikeIcon from '$lib/images/likebtn.svg';
+	import DotsVertical from '$lib/images/dotvertical.svg';
 	import FollowIcon from '$lib/images/followbtn.svg';
 	import MuteIcon from '$lib/images/mutebtn.svg';
 	import CalendarIcon from '$lib/images/calendaricon.svg';
 	import TimerIcon from '$lib/images/timericon.svg';
 	import CrownIcon from '$lib/images/crown.svg';
+	import { Button, Dropdown, DropdownItem, Chevron } from 'flowbite-svelte';
 	export let authorName: string;
 	export let blogTitle: string;
 	export let contentPreview: string;
 	export let publishDate: string;
 	export let readDuration: string;
 	export let mainTag: string;
-</script>
+	let placementdots = 'bottom-end';
+</script>  
 
 <div class="listingCol">
 	<div class="cardStyle2 bg-white border border-solid border-gray rounded-xl">
@@ -30,7 +33,7 @@
 								alt="Feature Image"
 							/>
 						</div>
-						<div class="flex-1 mt-5 md:mt-0 pl-0 md:pl-0 xl:pl-0">
+						<div class="flex-1 relative mt-5 md:mt-0 pl-0 md:pl-0 xl:pl-0">
 							<div class="flex mb-3 gap-3 items-center">
 								<div class="flex-none">
 									<img class="w-[50px] h-[50px] rounded-full object-cover" src={User5} alt="User" />
@@ -79,6 +82,33 @@
 									</div>
 								</div>
 							</div>
+							<div class="actionBtn absolute top-0 xl:-top-8 -right-8 h-full px-9 py-4 xl:py-7">
+								<div class="dotsVertical relative">
+									<Button class="hover:bg-transparent bg-transparent" data-placement1="bottom-end">
+										<img src={DotsVertical} class="relative" alt="Logo" />
+									</Button>
+									<Dropdown {placementdots} triggeredBy="[data-placement1]">
+										<DropdownItem class="text-center flex flex-col justify-center items-center">
+											<span class="btnIcon">
+												<img class="mx-auto" src={LikeIcon} alt="Like" />
+											</span>
+											<span class="font-light text-sm">Like</span>
+										</DropdownItem>
+										<DropdownItem class="text-center flex flex-col justify-center items-center">
+											<span class="btnIcon">
+												<img class="mx-auto" src={FollowIcon} alt="Follow" />
+											</span>
+											<span class="font-light text-sm">Follow</span>
+										</DropdownItem>
+										<DropdownItem class="text-center flex flex-col justify-center items-center">
+											<span class="btnIcon">
+												<img class="mx-auto" src={MuteIcon} alt="Mute" />
+											</span>
+											<span class="font-light text-sm">Mute</span>
+										</DropdownItem>
+									</Dropdown>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -100,36 +130,6 @@
 							</div>
 						</div>
 					</div> -->
-					<div class="flex-none h-full">
-						<div class="actionBtn h-full px-9 py-4 xl:py-7">
-							<div class="flex gap-3 flex-row xl:flex-col h-full items-center justify-between">
-								<div class="flex-none">
-									<button class="text-center flex flex-col justify-center items-center">
-										<span class="btnIcon">
-											<img class="mx-auto" src={LikeIcon} alt="Like" />
-										</span>
-										<span class="font-light text-sm">Like</span>
-									</button>
-								</div>
-								<div class="flex-none">
-									<button class="text-center flex flex-col justify-center items-center">
-										<span class="btnIcon">
-											<img class="mx-auto" src={FollowIcon} alt="Follow" />
-										</span>
-										<span class="font-light text-sm">Follow</span>
-									</button>
-								</div>
-								<div class="flex-none">
-									<button class="text-center flex flex-col justify-center items-center">
-										<span class="btnIcon">
-											<img class="mx-auto" src={MuteIcon} alt="Mute" />
-										</span>
-										<span class="font-light text-sm">Mute</span>
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>

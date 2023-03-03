@@ -75,6 +75,18 @@
   .headerDD button {
     @apply p-0 focus:shadow-none focus:ring-0 focus:border-0;
   }
+  .dotsVertical button {
+    @apply p-0 focus:shadow-none focus:ring-0 focus:border-0;
+  }
+  .dotsVertical button + div {
+    @apply shadow-none;
+  }
+  .dotsVertical button + div ul {
+    @apply w-14 -ml-2 bg-white rounded;
+  }
+  .dotsVertical button + div ul li + li {
+    @apply mt-3;
+  }
   .headerDD button + div {
     @apply rounded-[10px] rounded-tr-none;
   }

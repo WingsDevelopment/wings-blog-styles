@@ -8,16 +8,20 @@
 </script>
 
 <section>
-	<div class="container px-3 pr-4 mx-auto 2xl:max-w-[1400px]">
+	<div class="container px-3 pr-4 mx-auto xl:max-w-[1240px] 2xl:max-w-[1400px]">
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+			<div class="md:col-span-2">
+				<Title title="Blogs" />
+				<div class="mt-9"> 
+					<Nav />
+				</div>
+			</div>
+		</div>
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 			<div class="md:col-span-2">
 				<div class="blogMainCol px-4 overflow-hidden relative">
 					<div class="relative z-20">
-						<div class="container mx-auto 2xl:max-w-[1400px]">
-							<Title title="Blogs" />
-							<div class="mt-9"> 
-								<Nav />
-							</div>
+						<div class="blogOuter">
 							<div class="blogListing mt-10">
 								<ListingCard authorName="Katherine Becker" blogTitle="Why Black People Celebrate Mardi Gras The Way We Do" contentPreview="The hidden history of Mardi Gras, from a Black perspective" publishDate="Feb 19" readDuration="6 Min read" mainTag="Racism" />
 								<ListingCard authorName="Katherine Becker" blogTitle="Why Black People Celebrate Mardi Gras The Way We Do" contentPreview="The hidden history of Mardi Gras, from a Black perspective" publishDate="Feb 19" readDuration="6 Min read" mainTag="Racism" />

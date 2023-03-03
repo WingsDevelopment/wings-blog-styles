@@ -13,7 +13,7 @@
 
 <section>
 	<div class="bannerCol px-4 overflow-hidden">
-		<div class="container mx-auto 2xl:max-w-[1400px]">
+		<div class="container mx-auto xl:max-w-[1200px] 2xl:max-w-[1400px]">
 			<Title title="Trending on Medium" />
 			<div class="flex flex-col xl:flex-row mt-24">
 				<div class="flex-1 xl:pr-[40px] 2xl:pr-[60px]">

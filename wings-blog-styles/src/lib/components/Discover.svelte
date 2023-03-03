@@ -3,11 +3,11 @@
 	import BgShapeVector from '$lib/images/bgshape.svg';
 </script>
 
-<div class="flex-none sticky top-3">
+<div class="flex-none sticky mt-10 top-3">
 	<div class="w-full mt-10 xl:mt-0">
 		<div class="sidebarCol relative">
 			<div
-				class="sidebarInner relative z-30 bg-white rounded-[10px] border border-solid border-gray pt-[48px] pb-[30px] pr-4 xl:pr-[22px] pl-5 xl:pl-[30px]"
+				class="sidebarInner relative z-30 bg-white rounded-[10px] border border-solid border-gray pt-[48px] pb-[30px] pr-4 xl:pr-[18px] pl-4 xl:pl-6"
 			>
 				<div class="sidebarTitle text-center">
 					<h3 class="text-[22px] leading-6 text-dark font-semibold">
