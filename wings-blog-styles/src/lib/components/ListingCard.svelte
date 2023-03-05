@@ -27,11 +27,8 @@
 				<div class="blogMain p-5">
 					<div class="flex flex-col xl:flex-row gap-5 2xl:gap-8">
 						<div class="flex-none">
-							<img
-								class="rounded-xl w-full xl:w-[262px] h-[214px] object-cover"
-								src={FeatImg}
-								alt="Feature Image"
-							/>
+							<!-- svelte-ignore a11y-img-redundant-alt -->
+							<img class="rounded-xl w-full xl:w-[262px] h-[214px] object-cover" src={FeatImg} alt="Feature Image" />
 						</div>
 						<div class="flex-1 relative mt-5 md:mt-0 pl-0 md:pl-0 xl:pl-0">
 							<div class="flex mb-3 gap-3 items-center">
