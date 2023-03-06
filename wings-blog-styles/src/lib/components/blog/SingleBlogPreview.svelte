@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Title from '$lib/components/Title.svelte';
-	import Nav from '$lib/components/Nav.svelte';
 	import FeatImg from '$lib/images/featimg.jpg';
 	import User5 from '$lib/images/user5.png';
 	import LikeIcon from '$lib/images/likebtn.svg';
@@ -10,7 +8,7 @@
 	import CalendarIcon from '$lib/images/calendaricon.svg';
 	import TimerIcon from '$lib/images/timericon.svg';
 	import CrownIcon from '$lib/images/crown.svg';
-	import { Button, Dropdown, DropdownItem, Chevron } from 'flowbite-svelte';
+	import { Button, Dropdown, DropdownItem } from 'flowbite-svelte';
 	export let authorName: string;
 	export let blogTitle: string;
 	export let contentPreview: string;

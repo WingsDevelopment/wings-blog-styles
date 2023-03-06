@@ -1,10 +1,10 @@
 <script>
 	import Title from '$lib/components/Title.svelte';
 	import Nav from '$lib/components/Nav.svelte';
-	import ListingCard from '$lib/components/ListingCard.svelte';
+	import SingleBlogPreview from '$lib/components/blog/SingleBlogPreview.svelte';
 	import BodyShapeRight from '$lib/images/bodyshaperight.svg';
 	import BodyShapeLeft from '$lib/images/bodyshapeleft.svg';
-	import Discover from './Discover.svelte';
+	import Discover from '../Discover.svelte';
 </script>
 
 <section>
@@ -23,7 +23,7 @@
 					<div class="relative z-20">
 						<div class="blogOuter">
 							<div class="blogListing mt-10">
-								<ListingCard
+								<SingleBlogPreview
 									authorName="Katherine Becker"
 									blogTitle="Why Black People Celebrate Mardi Gras The Way We Do"
 									contentPreview="The hidden history of Mardi Gras, from a Black perspective"
@@ -31,7 +31,7 @@
 									readDuration="6 Min read"
 									mainTag="Racism"
 								/>
-								<ListingCard
+								<SingleBlogPreview
 									authorName="Katherine Becker"
 									blogTitle="Why Black People Celebrate Mardi Gras The Way We Do"
 									contentPreview="The hidden history of Mardi Gras, from a Black perspective"
@@ -39,7 +39,7 @@
 									readDuration="6 Min read"
 									mainTag="Racism"
 								/>
-								<ListingCard
+								<SingleBlogPreview
 									authorName="Katherine Becker"
 									blogTitle="Why Black People Celebrate Mardi Gras The Way We Do"
 									contentPreview="The hidden history of Mardi Gras, from a Black perspective"
@@ -47,7 +47,7 @@
 									readDuration="6 Min read"
 									mainTag="Racism"
 								/>
-								<ListingCard
+								<SingleBlogPreview
 									authorName="Katherine Becker"
 									blogTitle="Why Black People Celebrate Mardi Gras The Way We Do"
 									contentPreview="The hidden history of Mardi Gras, from a Black perspective"
@@ -55,7 +55,7 @@
 									readDuration="6 Min read"
 									mainTag="Racism"
 								/>
-								<ListingCard
+								<SingleBlogPreview
 									authorName="Katherine Becker"
 									blogTitle="Why Black People Celebrate Mardi Gras The Way We Do"
 									contentPreview="The hidden history of Mardi Gras, from a Black perspective"
@@ -63,7 +63,7 @@
 									readDuration="6 Min read"
 									mainTag="Racism"
 								/>
-								<ListingCard
+								<SingleBlogPreview
 									authorName="Katherine Becker"
 									blogTitle="Why Black People Celebrate Mardi Gras The Way We Do"
 									contentPreview="The hidden history of Mardi Gras, from a Black perspective"
@@ -71,7 +71,7 @@
 									readDuration="6 Min read"
 									mainTag="Racism"
 								/>
-								<ListingCard
+								<SingleBlogPreview
 									authorName="Katherine Becker"
 									blogTitle="Why Black People Celebrate Mardi Gras The Way We Do"
 									contentPreview="The hidden history of Mardi Gras, from a Black perspective"
@@ -79,7 +79,7 @@
 									readDuration="6 Min read"
 									mainTag="Racism"
 								/>
-								<ListingCard
+								<SingleBlogPreview
 									authorName="Katherine Becker"
 									blogTitle="Why Black People Celebrate Mardi Gras The Way We Do"
 									contentPreview="The hidden history of Mardi Gras, from a Black perspective"
@@ -87,7 +87,7 @@
 									readDuration="6 Min read"
 									mainTag="Racism"
 								/>
-								<ListingCard
+								<SingleBlogPreview
 									authorName="Katherine Becker"
 									blogTitle="Why Black People Celebrate Mardi Gras The Way We Do"
 									contentPreview="The hidden history of Mardi Gras, from a Black perspective"
@@ -95,7 +95,7 @@
 									readDuration="6 Min read"
 									mainTag="Racism"
 								/>
-								<ListingCard
+								<SingleBlogPreview
 									authorName="Katherine Becker"
 									blogTitle="Why Black People Celebrate Mardi Gras The Way We Do"
 									contentPreview="The hidden history of Mardi Gras, from a Black perspective"
@@ -103,7 +103,7 @@
 									readDuration="6 Min read"
 									mainTag="Racism"
 								/>
-								<ListingCard
+								<SingleBlogPreview
 									authorName="Katherine Becker"
 									blogTitle="Why Black People Celebrate Mardi Gras The Way We Do"
 									contentPreview="The hidden history of Mardi Gras, from a Black perspective"
@@ -111,7 +111,7 @@
 									readDuration="6 Min read"
 									mainTag="Racism"
 								/>
-								<ListingCard
+								<SingleBlogPreview
 									authorName="Katherine Becker"
 									blogTitle="Why Black People Celebrate Mardi Gras The Way We Do"
 									contentPreview="The hidden history of Mardi Gras, from a Black perspective"
