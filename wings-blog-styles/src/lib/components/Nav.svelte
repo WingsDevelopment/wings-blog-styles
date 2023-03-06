@@ -2,7 +2,9 @@
 	import Tag from '$lib/components/Tag.svelte';
 </script>
 
-<div class="navCol w-full scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-primary scrollbar-track-primaryLight px-2 overflow-x-auto">
+<div
+	class="navCol w-full scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-primary scrollbar-track-primaryLight px-2 overflow-x-auto"
+>
 	<ul class="whitespace-nowrap">
 		<li class="active">
 			<button>
