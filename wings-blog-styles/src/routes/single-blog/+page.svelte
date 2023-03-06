@@ -1,6 +1,6 @@
 <script>
 	import Header from '$lib/components/Header.svelte';
-	import BlogSidebar from '$lib/components/BlogSidebar.svelte';
+	import BlogSidebar from '$lib/components/blog/BlogSidebar.svelte';
 	import Featimage from '$lib/images/mainimg.jpg';
 	import User from '$lib/images/user1.png';
 	import Play from '$lib/images/listen.svg';

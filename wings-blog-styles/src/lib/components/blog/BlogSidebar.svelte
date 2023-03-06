@@ -1,5 +1,5 @@
 <script>
-    import BlogsideList from '$lib/components/BlogsideList.svelte';
+    import BlogsideList from '$lib/components/blog/BlogsideList.svelte';
 </script>
 <div class="flex-none sticky top-[80px]">
     <div class="w-full mt-10 xl:mt-0">
