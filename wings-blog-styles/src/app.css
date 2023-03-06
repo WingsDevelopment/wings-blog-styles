@@ -96,4 +96,34 @@
   .headerDD ul li + li {
     @apply mt-3;
   }
+  .navCol button span {
+    @apply mb-0;
+  }
+  .navCol .splide__pagination  {
+    @apply hidden;
+  }
+  .navCol .splide {
+    @apply px-7;
+  }
+  .navCol .splide__arrow--prev {
+    @apply left-0;
+  } 
+  .navCol .splide__arrow--next {
+    @apply right-0;
+  } 
+  .navCol .splide__arrow {
+    @apply w-7 h-7;
+  }
+  .navCol .splide__list li button {
+    @apply ml-1;
+  }
+  .navCol .splide__arrow[disabled] {
+    @apply hidden;
+  }
+  .navCol .splide__arrow svg {
+    @apply w-3;
+  }
+  .navCol .splide__track {
+    @apply ml-1;
+  }
 }
