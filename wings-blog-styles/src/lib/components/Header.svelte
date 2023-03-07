@@ -11,8 +11,8 @@
 <div
 	class="headerCol bg-transparent left-0 z-50 px-5 xl:px-10 2xl:px-[60px] py-3 xl:py-4 2xl:py-5 right-0 top-0 fixed"
 >
-	<div class="flex items-center">
-		<div class="flex-1">
+	<div class="flex items-center justify-between">
+		<div class="flex-none">
 			<div class="logoCol">
 				<a href="javascript:void(0)">
 					<img class="w-16" src={Logo} alt="Logo" />
